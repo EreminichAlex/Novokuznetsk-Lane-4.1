@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    min-height: 900px;
+    background-image: url(header-background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
