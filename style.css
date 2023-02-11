@@ -313,17 +313,16 @@ main {
     background-color: #282828;
     min-height: 676px;
     padding-top: 100px;
+    padding-bottom: 100px;
     background-image: url(значки/register-edge-left.png), url(значки/register-edge-right.png), url(border.svg);
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 22% 14%, 81% 15%, 50% 93%;
+    background-position: 22% 14%, 81% 15%, 50% 51%;
+    background-clip: content-box content-box initial;
 }
 
 .register-container {
     width: 1110px;
     margin: 0 auto;
-    /* background-image: url(значки/register-edge-left.png), url(значки/register-edge-right.png); */
-    /* background-repeat: no-repeat, no-repeat; */
-    /* background-position: 10% 0%, 107% 0%; */
 }
 .register-text {
     width: 540px;
@@ -355,9 +354,6 @@ main {
     line-height: 150%;
     color: #FFFFFF;
 }
-.register-text form {
-    margin-top: 81px;
-}
 
 /* --------------------- ФОРМА -------------- */
 .form-reg {
@@ -367,11 +363,12 @@ main {
     align-items: stretch;
     flex-wrap: wrap;
     column-gap: 30px;
+    margin-top: 71px;
 }
 
 input:focus, textarea:focus, select:focus {
     outline: none !important;
-  }
+}
 input {
     border: none;
     border-bottom: 1px solid #FFFFFF;
@@ -382,6 +379,10 @@ input {
     font-size: 13px;
     line-height: 150%;
     color: #FFFFFF;
+}
+input:focus {
+    border-bottom: 2px solid #FFFFFF;
+    background-color: #2e2e2e;
 }
 .name, .tel {
     width: 255px;
@@ -404,6 +405,7 @@ input {
     background-color: #C4C4C4;
     color: #000;
 }
+
 
 /*------------------- PLACEHOLDER настройка ------------------- */
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
